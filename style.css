@@ -1,0 +1,82 @@
+@import './assets/fonts/Figtree-VariableFont_wght.ttf';
+@import './assets/fonts/Figtree-Italic-VariableFont_wght.ttf';
+@import './assets/fonts/static/Figtree-ExtraBold.ttf';
+@import './assets/fonts/static/Figtree-SemiBold.ttf';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--yellow);
+}
+
+.card{
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 24px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1.25rem;
+    box-shadow: 8px 8px var(--gray-950);
+    img {
+        border-radius: 0.75rem;
+    }
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    gap: 12px;
+
+    p{
+        color: var(--gray-500);
+    }
+    button {
+        font-weight: 800;
+        background: var(--yellow);
+        padding: 4px 12px;
+        border: none;
+        border-radius: 0.25rem;
+    }
+}
+
+.avatar {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    font-weight: 800;
+    img{
+        width: 32px;
+    }
+}
+
+.attribution{
+    margin-top: 20px;
+}
+
